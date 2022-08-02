@@ -203,13 +203,26 @@ h2 {
     border: none;
 }
 
+.project_add {
+    width: 80%;
+    height: 10%;
+    border-radius: 1rem;
+    font-size: 2rem;
+    background-color: rgb(148, 255, 127);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+ 
+
 .fieldset {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     --sizer: 500px;
-    width: min(var(--sizer), 50vw);
-    height: min(var(--sizer), 50vw);
+    width: max(calc(var(--sizer) - 150px), 50vw);
+    height: max(var(--sizer), 50vw);
     background-color: white;
     border: 5px solid cornflowerblue;
     background-color: lightblue;
@@ -243,10 +256,6 @@ legend {
     border-radius: 20px;
     background-color: lightblue;
 
-}
-
-.hidden {
-    display: none;
 }
 
 textarea {
@@ -290,12 +299,67 @@ input[type = "text"] {
     text-align: center;
 } 
 
-fieldset>input[type = "date"] {
-    height: 2rem;
+
+fieldset>input[type = "datetime-local"] {
+    height: 3rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-self: center;
+}
+
+.project_container {
+    position: absolute;
+    grid-column: 3 / 4;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    gap: 0.5rem;
+    overflow:auto;
+    flex-wrap: wrap;
+}
+
+.project_container>.add_project {
+    width: 3rem;
+    height: 3rem;
+    background-color: rgb(131, 255, 127);
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 3rem;
+}
+
+.project {
+    border: 5px solid coral;
+    height: 8rem;
+    width: 8rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(48, 152, 250);
+    border-radius: 1rem;
+}
+
+.project_title {
+    color:white;
+}
+
+.project_description {
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.project_description>* {
+    width: 100%;
+    text-align: center;
 }
 
 
@@ -303,3 +367,6 @@ fieldset>input[type = "date"] {
 
 
 
+.hidden {
+    display: none;
+}

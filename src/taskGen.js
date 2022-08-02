@@ -31,8 +31,7 @@ function reorder() {
 
     var child = tasks.lastElementChild;
     while (child) {tasks.removeChild(child);
-    child = tasks.lastElementChild;
-    console.log("removed")}
+    child = tasks.lastElementChild;}
 
     newOrder.forEach((e) => {tasks.appendChild(e)});
 
@@ -61,6 +60,6 @@ function generateCard(...info) {
     return card;
 }
 
-export {generateCard, reorder};
+export {generateCard, reorder, makeTask};
 
 

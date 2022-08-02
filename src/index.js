@@ -1,5 +1,5 @@
 import './style.css';
-import { navigation, genButton } from './layoutBuilder';
+import { navigation, genButton, genProjects } from './layoutBuilder';
 import { makeElement as create } from './helpers';
 import { generateCard } from './taskGen';
 
@@ -22,6 +22,8 @@ middle.appendChild(navigation());
 middle.appendChild(create('div', 'bar2'));
 const taskList = create('div', 'taskList');
 middle.appendChild(taskList);
+
+middle.appendChild(genProjects());
 
 /*taskList.appendChild(generateCard("Homework","Math and chemistry","high"));
 taskList.appendChild(generateCard("Homework","Math and chemistry","medium"));
