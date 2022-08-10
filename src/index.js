@@ -1,5 +1,5 @@
 import './style.css';
-import { navigation, genButton, genProjects } from './layoutBuilder';
+import { navigation, genButton, genProjects, home_on_click } from './layoutBuilder';
 import { makeElement as create } from './helpers';
 import { generateCard } from './taskGen';
 
@@ -21,6 +21,7 @@ base.appendChild(middle)
 middle.appendChild(navigation());
 middle.appendChild(create('div', 'bar2'));
 const taskList = create('div', 'taskList');
+taskList.classList.add("hidden");
 middle.appendChild(taskList);
 
 middle.appendChild(genProjects());
@@ -33,6 +34,10 @@ const bottom = create('div', 'bottom');
 base.appendChild(bottom);
 
 bottom.appendChild(genButton());
+
+home_on_click();
+
+
 
 
 
