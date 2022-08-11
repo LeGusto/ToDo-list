@@ -421,6 +421,7 @@ fieldset>input[type = "datetime-local"] {
     line-height: 1em;
     text-overflow: ellipsis;
     word-wrap: break-word;
+    text-shadow: 0px 0px 5px black;
 }
 
 .project_description {
@@ -440,6 +441,8 @@ fieldset>input[type = "datetime-local"] {
     width: 100%;
     text-align: center;
     height: 1rem;
+    text-shadow: 0px 0px 5px black;
+
 
 }
 
