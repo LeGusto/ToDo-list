@@ -8,7 +8,7 @@ let form = undefined;
 let total_tasks = 0;
 let home_on_click = undefined;
 let addProject = undefined;
-
+S
 function deduct_task() {
     total_tasks -= 1;
 }

@@ -55,7 +55,6 @@ function reorder() {
     dates.forEach((dt) => {
         let chosenInd = DOM_el.findIndex((a) => {
             let el_d = parseISO(a.querySelector("input[type = 'datetime-local']").value);
-            console.log(typeof(el_d), el_d)
             return el_d.getTime() === dt.getTime();
         })
         let chosen = DOM_el[chosenInd];
